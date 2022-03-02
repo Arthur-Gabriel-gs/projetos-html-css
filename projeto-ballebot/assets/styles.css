@@ -1,0 +1,163 @@
+body{
+    background-image: linear-gradient(to right, #473130,  #6A4741, #8D5D52);
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Passion+One:wght@400;700;900&family=Sarala&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    margin-top: 30px;
+}
+
+header nav{
+    margin-top: 30px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px;
+    font-family: 'Sarala', sans-serif;
+    letter-spacing: 1px;
+}
+
+header .menu-mobile{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+header .menu-mobile .menu-line{
+    background-color: white;
+    height: 3px;
+    margin: 3px;
+}
+
+.line{
+    background-color: white;
+    height: 1px;
+    margin-top: 30px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+}
+
+main .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#FCF3CF;
+    padding-right: 45px;
+    gap: 32px;
+}
+
+main .left .name{
+    font-size: 64px;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+
+main .left .content{
+    font-size: 24px;
+    font-weight: 400px;
+    font-family: 'Sarala' cursive;
+    padding-bottom: 20px;
+}
+
+main .left .button a{
+    text-decoration: none;
+    background-color: #FCF3CF;
+    color: #6A4741;
+    width: 180px;
+    height: 60px;
+    font-family: 'Sarala' cursive;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.212);
+}
+
+main .left .button a:hover{
+    background-color: rgb(151, 135, 135);
+}
+
+.line2{
+    height: 1px;
+    background-color: white;
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+section{
+    color: #FCF3CF;
+    text-align: center;
+}
+
+section .title{
+    font-size: 24px;
+    font-family: 'rightous', cursive;
+    padding-bottom: 15px;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+li{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Sarala' cursive;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+}
+
+footer img{
+    padding: 30px;
+}
+
+@media (max-width: 900px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 801px){
+    header .menu-mobile{
+        display: none;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    header .menu-mobile{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+}

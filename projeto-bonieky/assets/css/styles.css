@@ -1,0 +1,87 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@400;500;700&display=swap');
+
+
+.main{
+    background-color: #1D2437;
+    background-image: url("../images/bg.png");
+}
+.container{
+    max-width: 1070px;
+    margin: auto;
+    color: white;
+}
+
+
+header{
+    padding-top: 45px;
+}
+
+.heroArea{
+    display: flex;
+}
+
+.heroArea .leftside h1{
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: bold;
+    margin: 80px 0 20px 0;
+}
+
+.heroArea .leftside .subtitle{
+    font-size: 16px;
+    line-height: 23px;
+    color: #999;
+    margin-bottom: 30px ;
+}
+
+.heroArea .leftside .form{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.heroArea .leftside .form input{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    width: 300px;
+    padding: 0 10px;
+}
+
+.heroArea .leftside .form button{
+    height: 40px;
+    border: 0;
+    background-color: #0071b7;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+
+.heroArea .leftside .techs{
+    margin-bottom: 80px;
+}
+
+.heroArea .leftside .techs img{
+    margin-right: 10px;
+}
+
+.heroArea .leftside{
+    flex: 1;
+}
+
+.heroArea .rightside{
+    flex: 1;
+    background-image: url("../images/hero.png");
+    background-size: 100% auto;
+}
