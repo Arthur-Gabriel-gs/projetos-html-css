@@ -66,6 +66,11 @@ header{
     font-size: 14px;
     padding: 0 20px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.heroArea .leftside .form button:hover{
+    opacity: 0.7;
 }
 
 .heroArea .leftside .techs{
@@ -84,4 +89,281 @@ header{
     flex: 1;
     background-image: url("../images/hero.png");
     background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+/*
+SECTION INFO AREA
+*/
+
+.info{
+    border-bottom: 2px solid #eaeef1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info--text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2c8cb;
+    margin: 0px 15px;
+}
+
+.info-circle{
+    width: 6px;
+    height: 6px;
+    background-color: #c2c8cb;
+    border-radius: 50%;
+}
+
+
+
+/*
+INSTRUCTIONS AREA
+*/
+
+
+.inst-container{
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+}
+
+.inst-item{
+    border-left: 3px solid #ECF0F3;
+    display: flex;
+}
+
+.inst-item:last-child{
+    border-left: 0;
+}
+
+.inst-circle{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #0071b7;
+    margin-left: -9px;
+}
+
+.inst-text{
+    flex: 1;
+    margin-left: 50px;
+    margin-top: -8px;
+}
+
+.inst-text h2{
+    font-size: 32px;
+    color: #000;
+    margin: 0;
+}
+
+.inst-text p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #777;
+    margin-bottom: 70px;
+}
+
+
+/*
+CTA AREA
+*/
+
+.cta{
+    background-color: #1D2437;
+    border-bottom: 2px solid #333;
+}
+
+.cta-container{
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.cta-left{
+    flex: 1;
+    margin-right: 30px;
+}
+
+.cta-left h2{
+    font-size: 40px;
+    margin: 0;
+}
+
+.cta-left p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #777;
+}
+
+.cta-right{
+    flex: 1;
+    margin-left: 30px;
+}
+
+.cta-right input{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.cta-right button{
+    height: 40px;
+    width: 100%;
+    border: 0;
+    background-color: #0071b7;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.cta-right button:hover{
+    opacity: 0.7;
+}
+
+
+/*
+FOOTER AREA
+*/
+
+footer{
+    background-color: #1D2437;
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 1070px;
+}
+
+.footer-right{
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+
+.footer-right a{
+    color: #777;
+    text-decoration: none;
+}
+
+.footer-right a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*******  MEDIA QUERIES ********/
+
+@media(max-width: 1030px){
+    .main .container{
+        padding: 0 20px;
+    }
+
+    footer .footer-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media(max-width: 900px){
+    .heroArea{
+        flex-direction: column-reverse;
+    }
+
+    .heroArea .rightside{
+        height: 300px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+
+    .rightside-linear{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(360deg, #1D2437 8.92%, rgba(29, 36, 55, 0) 65.85%);
+    }
+
+    .heroArea .leftside h1{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .heroArea .leftside .subtitle{
+        text-align: center;
+    }
+
+    .heroArea .leftside .form{
+        width: 100vw;
+    }
+
+
+    .heroArea .leftside .form input{
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .heroArea .leftside .form button{
+        width: 100%;
+        margin: 0;
+    }
+
+    .heroArea .leftside .techs{
+        text-align: center;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .instructions .inst-item{
+        margin: 0 50px;
+    }
+
+    .cta .cta-container{
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .cta .cta-right,
+    .cta .cta-left{
+        margin: 0;
+    }
+
+    .cta .cta-left{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .footer-container{
+        flex-direction: column;
+        
+    }
+
+    footer .footer-left{
+        margin-bottom: 30px;
+    }
+
+    footer .footer-right{
+        text-align: center;
+    }
 }
