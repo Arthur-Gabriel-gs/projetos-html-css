@@ -50,13 +50,34 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--secundary-color);
     padding: 55px 0;
+    transition: 1s;
+}
+
+.mobile-text{
+    display: none ;
+}
+
+
+.register{
+    transform: translateX(-100%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.container.move .login{
+    transform: translateX(100%);
+}
+.container.move .register{
+    transform: translateX(0%);
+    z-index: 1;
+    opacity: 1;
 }
 
 .form-title{
     font-size: 3rem;
     font-weight: 400;
-    color: var(--text-color-dark);
 }
 .form-social{
     display: flex;
@@ -123,6 +144,7 @@ main{
     color: var(--text-color-light);
     text-align: center;
     transition: 1s;
+    z-index: 2;
 }
 .container.move .overlay-container{
     transform: translateX(0%);
@@ -149,4 +171,47 @@ main{
 
 .form-title-light{
     color: var(--text-color-light);
+}
+
+
+@media (max-width: 768px){
+    .overlay-container{
+        display: none;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    .form{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .register{
+        position: absolute;
+        background-color: var(--primary-color);
+        color: var(--text-color-light);
+        transform: translateX(100%);
+    }
+
+    .container.move .register{
+        transform: translateX(0%);
+    }
+
+    .form-button{
+        background-color: var(--primary-color);
+        color: var(--text-color-light);
+        border: 2px solid var(--secundary-color);
+    }
+
+    .mobile-text{
+        display: block;
+    }
+
+    .mobile-text a{
+        font-weight: 900;
+        color: inherit;
+    }
 }
