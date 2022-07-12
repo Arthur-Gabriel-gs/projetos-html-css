@@ -35,7 +35,6 @@ main{
     border-radius: 12px;
     box-shadow: 0 5px 20px #A0A0A0;
     overflow: hidden;
-    
 }
 
 .form-container{
@@ -123,6 +122,10 @@ main{
     transform: translateX(100%);
     color: var(--text-color-light);
     text-align: center;
+    transition: 1s;
+}
+.container.move .overlay-container{
+    transform: translateX(0%);
 }
 
 .overlay{
@@ -136,6 +139,12 @@ main{
     padding: 40px;
     background-color: var(--primary-color); 
     color: var(--text-color-light);
+    transition: 1s;
+}
+
+.container.move .overlay:nth-child(2){
+    z-index: -1;
+    opacity: 0;
 }
 
 .form-title-light{
