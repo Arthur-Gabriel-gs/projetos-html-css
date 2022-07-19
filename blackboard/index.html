@@ -9,13 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="login">
+        <form>
             <h1>Blackboard</h1>
 
-            <form>
-                <input type="text" placeholder="Nome de usuário" >
-            </form>
-        </div>
+        
+            <div class="label-float">
+                <input type="text" id="usuario" required>
+                <label for="usuario">Nome de usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" required>
+                <label for="senha">Senha</label>
+            </div>
+
+            <button id="button">Fazer login</button>
+
+            <div class="forget">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+        </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
